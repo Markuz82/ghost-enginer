@@ -1,0 +1,72 @@
+
+html{
+    font-family: helvetica;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    }
+
+/* CSS HEADER */
+
+header{
+    background-color: #4C6291;
+    display: flex;
+    text-transform: none;
+    justify-content: space-between;
+    align-items: center;
+    }
+.menu__logotipo{
+    display: flex;
+    align-items: center;
+    padding: 0.4% 1%;
+}
+.menu__logotipo__nombre{
+    font-size: 65px;
+    text-decoration: none;
+}
+.menu__Nav{
+    display: flex;
+    text-align: end;
+}
+
+.menu__Nav__link01,.menu__Nav__link02,.menu__Nav__link03 {
+    color:#E6E6E6;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+
+}
+
+/* CSS CONTAINER */
+
+/* CSS ZONA TITULO DEL MÓDULO */
+
+.container__Titulo{
+    display: flex;
+    margin: 6% 2%;
+    align-items: center;
+}
+.container__Titulo__h3{
+    color: #4C6291;
+    font-size: 48px;
+    font-style: oblique;
+    padding: 1rem;
+}
+.container__Titulo_linea{
+    width: 200px;
+    height: 2px;
+    background-color: #707070;
+}
+
+/* CSS ZONA CENTRAL */
+
+.container__ZonaCentral{
+    display: flex;
+    align-items: center;
+    text-transform: none;
+}
+.container__ZonaCentral__COLUMNA01{
+    background-color: #E4EAF7;
+    align-items: center;
+}
