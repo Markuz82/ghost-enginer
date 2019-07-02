@@ -10,21 +10,21 @@ html{
 @font-face {
     font-family: 'Helvetica Neue Light Italic';
     src: local('Helvetica Neue'), 
-    url('\front_proyectos\proyecto11_ghost_enginer\assets\tipografia\HelveticaNeueLightItalic.woff') format('woff');
+    url('../assets/tipografia/HelveticaNeueLightItalic.woff') format('woff');
 }
     
 @font-face {
     font-family: 'Helvetica Neue Bold';
     font-style: normal;
     font-weight: normal;
-    src: local('Helvetica Neue Bold'), url('\front_proyectos\proyecto11_ghost_enginer\assets\tipografia\HelveticaNeueBold.woff') format('woff');
+    src: local('Helvetica Neue Bold'), url('../assets/tipografia/HelveticaNeueBold.woff') format('woff');
 }
    
 @font-face {
     font-family: 'Helvetica Neue Bold Italic';
     font-style: normal;
     font-weight: normal;
-    src: local('Helvetica Neue Bold Italic'), url('\front_proyectos\proyecto11_ghost_enginer\assets\tipografia\HelveticaNeueBoldItalic.woff') format('woff');
+    src: local('Helvetica Neue Bold Italic'), url('../assets/tipografia/HelveticaNeueBoldItalic.woff') format('woff');
 }
 
 /* CSS HEADER */
