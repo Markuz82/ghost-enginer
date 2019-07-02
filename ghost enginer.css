@@ -1,21 +1,41 @@
-
 html{
-    font-family: helvetica;
     color: #ffffff;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: none;
     font-size: 16px;
     }
+
+/* TIPOGRAFIAS USADAS */
+
+@font-face {
+    font-family: 'Helvetica Neue Light Italic';
+    src: local('Helvetica Neue'), 
+    url('\front_proyectos\proyecto11_ghost_enginer\assets\tipografia\HelveticaNeueLightItalic.woff') format('woff');
+}
+    
+@font-face {
+    font-family: 'Helvetica Neue Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Helvetica Neue Bold'), url('\front_proyectos\proyecto11_ghost_enginer\assets\tipografia\HelveticaNeueBold.woff') format('woff');
+}
+   
+@font-face {
+    font-family: 'Helvetica Neue Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Helvetica Neue Bold Italic'), url('\front_proyectos\proyecto11_ghost_enginer\assets\tipografia\HelveticaNeueBoldItalic.woff') format('woff');
+}
 
 /* CSS HEADER */
 
 header{
     background-color: #4C6291;
     display: flex;
-    text-transform: none;
     justify-content: space-between;
     align-items: center;
-    }
+    height: 111px;
+}
 .menu__logotipo{
     display: flex;
     align-items: center;
@@ -23,40 +43,47 @@ header{
 }
 .menu__logotipo__nombre{
     font-size: 65px;
-    text-decoration: none;
+    font-family: 'Helvetica Neue Light Italic';
+    font-style: italic;
 }
 .menu__Nav{
     display: flex;
     text-align: end;
 }
-
 .menu__Nav__link01,.menu__Nav__link02,.menu__Nav__link03 {
     color:#E6E6E6;
-    text-decoration: none;
     padding: 10px;
     font-size: 18px;
-
+    text-decoration: none;
+    font-family: 'Helvetica';
 }
 
 /* CSS CONTAINER */
+.container{
+    
+  
+}
 
 /* CSS ZONA TITULO DEL MÓDULO */
 
 .container__Titulo{
     display: flex;
-    margin: 6% 2%;
     align-items: center;
+    flex-basis: content;
+    height: 111px;
 }
 .container__Titulo__h3{
     color: #4C6291;
-    font-size: 48px;
+    font-size: 3rem;
+    font-family: 'Helvetica Neue Light Italic';
     font-style: oblique;
-    padding: 1rem;
+    padding: 0 1rem;
 }
 .container__Titulo_linea{
-    width: 200px;
+    flex-grow: 1;
     height: 2px;
     background-color: #707070;
+    
 }
 
 /* CSS ZONA CENTRAL */
@@ -64,9 +91,76 @@ header{
 .container__ZonaCentral{
     display: flex;
     align-items: center;
-    text-transform: none;
+    flex-direction: column;
+    height: calc(100vh-222px);  
+    justify-content: space-evenly;
 }
-.container__ZonaCentral__COLUMNA01{
-    background-color: #E4EAF7;
+
+.container__ZonaCentral__COLUMNA{
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    text-transform: none;
+    flex-basis: content;
+    width: 90%;
+    
+    
+}
+.container__ZonaCentral__COLUMNA__01{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #E4EAF7;
+    text-align: center;
+    width: 30%;
+    height: 32em;
+}
+.container__ZonaCentral__COLUMNA__02{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #C7D7F8;
+    text-align: center;
+    width: 30%;
+    height: 36em;
+}
+.container__ZonaCentral__COLUMNA__03{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ABC3F7;
+    text-align: center;
+    width: 30%;
+    height: 32em;
+    
+}
+.container__ZonaCentral__COLUMNA__02__titulo,.container__ZonaCentral__COLUMNA__01__titulo,.container__ZonaCentral__COLUMNA__03__titulo{
+    color: #707070;
+    font-size: 1.2em;
+    padding: 0.6rem;
+    margin: 1em;
+    font-family: 'Helvetica Neue Bold';
+}
+.container__ZonaCentral__COLUMNA__01__Precio,.container__ZonaCentral__COLUMNA__02__Precio,.container__ZonaCentral__COLUMNA__03__Precio{
+    color: #FFFFFF;
+    font-size: 2em;
+    font-style: oblique;
+    font-family: 'Helvetica Neue Bold';
+}
+.container__ZonaCentral__COLUMNA__01__caracteristica,.container__ZonaCentral__COLUMNA__02__caracteristica,.container__ZonaCentral__COLUMNA__03__caracteristica{
+    line-height: 1.5em;
+    color: #707070;
+    font-size: 1.2em;
+    padding: 1em;
+    font-family: 'helvetica';
+}
+.container__ZonaCentral__COLUMNA__01__enlace,.container__ZonaCentral__COLUMNA__02__enlace,.container__ZonaCentral__COLUMNA__03__enlace{
+    color: #FFFFFF;
+    font-size: 17px;
+    padding: 0.3rem;
+    text-transform: none;
+    background-color: #7F8DAA;
+    border-radius: 13px 13px 13px 13px;
+    margin: 1rem 6rem 1rem 6rem;
+    font-family: 'Helvetica Neue Light Italic';
 }
